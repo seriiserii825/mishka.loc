@@ -49,13 +49,13 @@ p {
 
 .container-big {
 	margin: 0 auto;
-	width: 1200px;
-	// outline: 1px solid #008000;
+	width: 1250px;
+	outline: 1px solid #008000;
 }
 
 @media screen and (max-width: $xl) {
 	.container-big {
-		width: 660px;
+		width: 768px;
 	}
 }
 
@@ -67,23 +67,18 @@ p {
 
 .container {
 	margin: 0 auto;
-	width: 960px;
+	width: 1050px;
 	outline: 1px solid #f00;
-}
-.container--940 {
-	width: 940px;
 }
 
 @media screen and (max-width: $xl) {
 	.container {
-		width: 620px;
+		width: 668px;
 	}
 }
 
 @media screen and (max-width: $md) {
 	.container {
-		padding-left: 20px;
-		padding-right: 20px;
-		width: 320px;
+		width: 260px;
 	}
 }
