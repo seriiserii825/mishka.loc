@@ -1,0 +1,33 @@
+.page-header
+	.container
+		.mobile-logo
+			img(src="assets/i/logo-mobile.svg", alt="logo" width="98" height="44")
+			.close-menu#js-close-menu
+				span
+				span
+			.show-menu#js-show-menu
+				span
+				span
+				span
+		ul.nav-menu#js-nav-menu
+			li.nav-menu__item.nav-menu__item--catalog
+				a.nav-menu__link(href="#") Каталог товаров
+			li.nav-menu__item.nav-menu__item--order
+				a.nav-menu__link(href="#") Вязание на заказ
+			li.nav-menu__item.logo.nav-menu__logo
+				a.nav-menu__link(href="#")
+					picture
+						source(media="(min-width: 1150px)", srcset="assets/i/logo.svg")
+						img(src="assets/i/logo-768.svg", alt="logo")
+			li.nav-menu__item.search.nav-menu__item--search
+				a.nav-menu__link(href="#")
+					svg.search__icon.nav-menu__icon
+						use(xlink:href="#search")
+					span.search__text Поиск по сайту
+			li.nav-menu__item.basket.nav-menu__item--basket
+				a.nav-menu__link(href="#")
+					svg.basket__icon.nav-menu__basket.nav-menu__icon
+						use(xlink:href="#basket")
+					span.basket__text Корзина: пока пуста
+
+
