@@ -1,5 +1,6 @@
 .page-header
 	.container
+
 		.mobile-logo
 			img(src="assets/i/logo-mobile.svg", alt="logo" width="98" height="44")
 			.close-menu#js-close-menu
@@ -9,6 +10,7 @@
 				span
 				span
 				span
+
 		ul.nav-menu#js-nav-menu
 			li.nav-menu__item.nav-menu__item--catalog
 				a.nav-menu__link(href="#") Каталог товаров
@@ -29,5 +31,15 @@
 					svg.basket__icon.nav-menu__basket.nav-menu__icon
 						use(xlink:href="#basket")
 					span.basket__text Корзина: пока пуста
+
+	.page-header__bottom
+		.container
+			ul.nav-menu-bottom
+				li.nav-menu-bottom__item
+					a.nav-menu-bottom__link(href="#") Новые поступления
+				li.nav-menu-bottom__item
+					a.nav-menu-bottom__link(href="#") Распродажа
+				li.nav-menu-bottom__item
+					a.nav-menu-bottom__link(href="#") Бесплатная доставка по России
 
 
