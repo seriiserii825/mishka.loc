@@ -1,0 +1,89 @@
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import '../libs/slick/slick/slick.scss';
+// @import '../libs/plyr/dist/plyr.css'
+// @import '../../../build/assets/i/svg/bg/css/sprite.css'
+
+body {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 700px;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 18px;
+	color: $tundora;
+	background: $white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	@include reset-list;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.container-big {
+	margin: 0 auto;
+	width: 1200px;
+	// outline: 1px solid #008000;
+}
+
+@media screen and (max-width: $xl) {
+	.container-big {
+		width: 660px;
+	}
+}
+
+@media screen and (max-width: $md) {
+	.container-big {
+		width: 320px;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+	outline: 1px solid #f00;
+}
+.container--940 {
+	width: 940px;
+}
+
+@media screen and (max-width: $xl) {
+	.container {
+		width: 620px;
+	}
+}
+
+@media screen and (max-width: $md) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 320px;
+	}
+}
