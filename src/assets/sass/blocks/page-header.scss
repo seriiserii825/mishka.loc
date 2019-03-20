@@ -57,6 +57,20 @@
 	}
 }
 
+.nav-menu__item--catalog,
+.nav-menu__item--order,
+.nav-menu__logo,
+.nav-menu__item--basket .basket__text  {
+	transition: all .3s ease;
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
 .nav-menu__item--search {
 	justify-content: center;
 	border-right: 1px solid $gallery;
@@ -120,10 +134,15 @@
 	@media screen and (max-width: $md) {
 		margin-right: 26px;
 	}
+
+	&:hover {
+		fill: $accent;
+		transition: all .6s ease;
+	}
 }
 
 .search__icon {
-	width: 18px;
+	width: 20px;
 	height: 19px;
 	fill: $alto;
 }
