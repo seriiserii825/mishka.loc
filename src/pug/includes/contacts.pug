@@ -1,0 +1,23 @@
+.contacts
+	.contacts__wrapper
+		.contacts__content
+			header.contacts__header
+				h2.section-title.contacts__title Контакты
+				img.contacts__icon(src="assets/i/flag.svg" alt="flag" width="50" height="84")
+
+			.contacts__data
+				.contacts__email.contacts__data-item
+					.contacts__property e-mail:
+					a(href="#").contacts__value.contacts__link info@mimimishkashop.ru
+
+				.contacts__address.contacts__data-item
+					.contacts__property адрес:
+					.contacts__value г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101
+
+			button.button.contacts__button напишите нам
+
+		.contacts__img
+			picture
+				source(media="(min-width: 1150px)", srcset="assets/i/map.jpg")
+				source(media="(min-width: 768px)", srcset="assets/i/map-tablet.jpg")
+				img(src="assets/i/map-mobile.jpg", alt="map")

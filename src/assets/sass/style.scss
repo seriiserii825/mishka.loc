@@ -10,7 +10,8 @@ body {
 	padding: 0;
 	padding-bottom: 700px;
 	font-family: 'Open Sans', 'Arial', sans-serif;
-	font-size: 18px;
+	font-size: 17px;
+	line-height: 30px;
 	color: $tundora;
 	background: $white;
 }
@@ -92,3 +93,4 @@ p {
 @import 'blocks/week-product';
 @import 'blocks/quick';
 @import 'blocks/reviews';
+@import 'blocks/contacts';
