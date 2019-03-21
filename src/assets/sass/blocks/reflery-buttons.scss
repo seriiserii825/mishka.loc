@@ -1,0 +1,41 @@
+.reflery-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 36px;
+	height: 116px;
+	background: $accent;
+
+	&--dark {
+		background: $accent-dark;
+	}
+}
+
+.reflery-button__title {
+	font-size: 20px;
+	line-height: 30px;
+	color: $white;
+	transition: all .4s ease;
+}
+
+.reflery-button__icon {
+	opacity: 0.5;
+	fill: $jungle-green;
+	transition: all .4s ease;
+}
+
+.reflery-button:hover {
+	cursor: pointer;
+
+	.reflery-button__icon {
+		opacity: 1;
+	}
+}
+
+.reflery-button:active {
+	.reflery-button__icon,
+	.reflery-button__title {
+		opacity: 0.5;
+	}
+}
+
