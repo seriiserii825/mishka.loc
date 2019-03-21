@@ -1,9 +1,13 @@
 .week-product {
+	margin-bottom: 72px;
+
 	@media screen and (max-width: $xl) {
+		margin-bottom: 52px;
 		padding-top: 130px;
 	}
 
 	@media screen and (max-width: $md) {
+		margin-bottom: 36px;
 		padding: 0;
 	}
 
