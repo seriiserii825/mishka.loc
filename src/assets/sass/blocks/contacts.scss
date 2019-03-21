@@ -1,3 +1,10 @@
+.contacts {
+	margin-bottom: 100px;
+
+	@media screen and (max-width: $xl) {
+		margin-bottom: 0;
+	}
+}
 
 .contacts__wrapper {
 	display: grid;
