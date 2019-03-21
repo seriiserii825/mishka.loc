@@ -1,6 +1,9 @@
 .page-header {
 	background: $white;
-	border-bottom: 1px solid $gallery;
+}
+
+.page-header__bottom {
+	border-top: 1px solid $gallery;
 }
 
 .nav-menu {
