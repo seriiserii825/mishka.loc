@@ -42,6 +42,10 @@
 
 .nav-menu__item--catalog {
 	border-right: 1px solid $gallery;
+
+	@media screen and (max-width: $md) {
+		border: none;
+	}
 }
 
 .nav-menu__item--order {
@@ -110,6 +114,7 @@
 	@media screen and (max-width: $md) {
 		padding: 0;
 		justify-content: flex-start;
+		border: none;
 	}
 }
 

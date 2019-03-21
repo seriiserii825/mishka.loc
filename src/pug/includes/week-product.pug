@@ -1,0 +1,33 @@
+.week-product
+	.container
+		header.week-product__header
+			span.week-product__label товар <br> недели
+			h2.week-product__title Вязанные корзинки
+
+		.week-product__wrap
+			.week-product__content
+				p.week-product__text Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
+				table.week-product__table.card-table
+					tbody
+						tr
+							td.card-table__property Цвет:
+							td.card-table__value «Тиффани»/серый
+
+						tr
+							td.card-table__property Диаметр:
+							td.card-table__value 25 см
+
+						tr
+							td.card-table__property Высота:
+							td.card-table__value 15 см
+
+				.week-product__show-mobile
+					img.week-product__img-mobile(src="assets/i/week-product-mobile-img.jpg", alt="img")
+
+				.week-product__price Цена: 990 руб.
+				button.button.week-product__button
+					span Заказать
+			picture.week-product__img
+				source(media="(min-width: 1150px)", srcset="assets/i/week-product-img.jpg")
+				source(media="(min-width: 768px)", srcset="assets/i/week-product-tablet-img.jpg")
+				img(src="assets/i/week-product-mobile-img.jpg", alt="img")
