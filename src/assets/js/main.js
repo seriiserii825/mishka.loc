@@ -23,16 +23,6 @@ $(function () {
 	let navMenu = $('#js-nav-menu');
 
 
-	// closeMenu.show();
-
-	// showMenu.on('click', function(){
-	// 	navList.addClass('nav-list--show');
-	// 	navMenu.addClass('nav-menu--show');
-	// 	navList.slideDown()
-	// 	closeMenu.show();
-	// 	showMenu.hide();
-	// });
-
 	closeMenu.on('click', function(){
 		closeMenu.hide();
 		showMenu.show();
@@ -43,6 +33,11 @@ $(function () {
 		closeMenu.show();
 		showMenu.hide();
 		navMenu.slideDown();
+	});
+
+	//reviews-slider
+	$('#js-reviews-slider').slick({
+
 	});
 
 });
