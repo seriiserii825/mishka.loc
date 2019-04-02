@@ -1,7 +1,7 @@
 extends template
 
 block title
-	title Каталог
+	title Вязание на заказ
 
 block content
 	.hidden
@@ -25,9 +25,9 @@ block content
 
 				ul.nav-menu#js-nav-menu
 					li.nav-menu__item.nav-menu__item--catalog
-						a.nav-menu__link(href="") Каталог товаров
+						a.nav-menu__link(href="catalog.html") Каталог товаров
 					li.nav-menu__item.nav-menu__item--order
-						a.nav-menu__link(href="form-page.html") Вязание на заказ
+						a.nav-menu__link(href="") Вязание на заказ
 					li.nav-menu__item.logo.nav-menu__logo
 						a.nav-menu__link(href="index.html")
 							picture
@@ -54,11 +54,9 @@ block content
 						li.nav-menu-bottom__item
 							a.nav-menu-bottom__link(href="#") Бесплатная доставка по России
 		section.page-title
-			h2.section-title Каталог товаров
+			h2.section-title Вязание на заказ
 
-		include ../includes/cards
-		include ../includes/video
-
+		include ../includes/form
 		include ../includes/footer
 
 

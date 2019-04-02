@@ -1,0 +1,66 @@
+.form__header {
+	padding: 130px 0 0;
+}
+
+.form__text {
+	padding-left: 116px;
+	max-width: 796px;
+}
+
+.form__group {
+	position: relative;
+	padding: 50px 0;
+	padding-left: 216px;
+
+	&--dark {
+		background: $seashell;
+	}
+}
+
+.form__title {
+	position: absolute;
+	top: 74px;
+	left: 112px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $accent;
+}
+
+.form__type-label {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 26px;
+	padding-left: 80px;
+	height: 52px;
+	font-size: 19px;
+	font-weight: bold;
+	color: $black;
+	cursor: pointer;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 52px;
+		height: 52px;
+		border: 2px solid $tundora;
+		border-radius: 50%;
+	}
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]:checked + label::after {
+	content: '';
+	position: absolute;
+	top: 17px;
+	left: 17px;
+	width: 22px;
+	height: 22px;
+	background: $accent;
+	border-radius: 50%;
+}

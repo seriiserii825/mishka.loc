@@ -1,0 +1,21 @@
+form.form
+	header.form__header
+		.container
+			p.form__text Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+
+	.form__group
+		.form__title Тип
+		.form__type-wrap
+			.form__type
+				input(id="radio1" type="radio", name="element" value="accesuar" checked)
+				label.form__type-label(for="radio1") Аксессуар для интерьера
+
+			.form__type
+				input(id="radio2" type="radio", name="element" value="toy")
+				label.form__type-label(for="radio2") Детская игрушка
+
+	.form__group.form__group--dark
+		.form__title Цвет
+		.form__type-wrap
+			.form__color
+
