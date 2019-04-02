@@ -1,0 +1,121 @@
+.cards {
+	padding-top: 130px;
+	fill: $alto;
+
+	@media screen and (max-width: $xl) {
+		padding-top: 82px;
+	}
+
+	@media screen and (max-width: $md) {
+		padding-top: 30px;
+	}
+}
+
+.cards__wrap {
+	display: flex;
+	justify-content: space-between;
+
+	@media screen and (max-width: $xl) {
+		display: block;
+	}
+}
+
+.cards__item {
+	margin-bottom: 54px;
+	border: 1px solid $gallery;
+	@media screen and (max-width: $xl) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media screen and (max-width: $md) {
+		display: block;
+	}
+}
+
+.cards__img {
+	width: 316px;
+	height: 462px;
+
+	@media screen and (max-width: $xl) {
+		flex-grow: 1;
+		height: 334px;
+	}
+
+	@media screen and (max-width: $md) {
+		height: 194px;
+	}
+
+	img {
+		@media screen and (max-width: $xl) {
+			height: 334px;
+		}
+
+		@media screen and (max-width: $md) {
+			height: 194px;
+		}
+	}
+}
+
+.cards__content {
+	padding: 26px 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@media screen and (max-width: $xl) {
+		flex-grow: 1;
+	}
+}
+
+.cards__title {
+	margin-bottom: auto;
+	max-width: 230px;
+	min-height: 54px;
+	font-size: 20px;
+	line-height: 24px;
+	color: $black;
+
+	@media screen and (max-width: $xl) {
+		min-height: auto;
+		margin-bottom: 0;
+	}
+
+	@media screen and (max-width: $md) {
+		max-width: none;
+		font-size: 17px;
+	}
+}
+
+.cards__param {
+	font-size: 15px;
+	line-height: 30px;
+
+	@media screen and (max-width: $xl) {
+		margin-bottom: auto;
+	}
+
+	@media screen and (max-width: $md) {
+		font-size: 13px;
+	}
+}
+
+.cards__price {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 22px;
+	border-top: 1px solid $gallery;
+}
+
+.cards__number {
+	font-weight: bold;
+
+	@media screen and (max-width: $md) {
+		font-size: 15px;
+	}
+}
+
+.cards__icon {
+	width: 21px;
+	height: 18px;
+}

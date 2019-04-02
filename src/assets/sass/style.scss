@@ -4,13 +4,16 @@
 @import '../libs/slick/slick/slick.scss';
 // @import '../libs/plyr/dist/plyr.css'
 // @import '../../../build/assets/i/svg/bg/css/sprite.css'
+html,
+body {
+	font-size: 17px;
+}
 
 body {
 	margin: 0;
 	padding: 0;
 	padding-bottom: 700px;
 	font-family: 'Open Sans', 'Arial', sans-serif;
-	font-size: 17px;
 	line-height: 30px;
 	color: $tundora;
 	background: $white;
@@ -84,8 +87,14 @@ p {
 	}
 }
 
+.section-title {
+	font-size: 53px;
+	line-height: 57px;
+}
+
 @import 'blocks/button';
 @import 'blocks/line';
+@import 'blocks/page-title';
 @import 'blocks/section-title';
 @import 'blocks/page-header';
 @import 'blocks/stuff';
@@ -94,4 +103,5 @@ p {
 @import 'blocks/quick';
 @import 'blocks/reviews';
 @import 'blocks/contacts';
+@import 'blocks/cards';
 @import 'blocks/footer';

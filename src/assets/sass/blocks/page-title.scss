@@ -1,0 +1,24 @@
+.page-title {
+	position: relative;
+	padding: 60px 0;
+	background: $alabaster;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 16px;
+		background: url("../i/stuff__buttons-bg.png") repeat-x center;
+
+		@media screen and (max-width: $md) {
+			background: none;
+		}
+	}
+
+	.section-title {
+		text-align: center;
+	}
+}
+

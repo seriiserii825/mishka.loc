@@ -1,7 +1,7 @@
 extends template
 
 block title
-	title Главная
+	title Каталог
 
 block content
 	.hidden
@@ -13,7 +13,8 @@ block content
 			.container
 
 				.mobile-logo
-					img(src="assets/i/logo-mobile.svg", alt="logo" width="98" height="44")
+					a.mobile-logo__link(href="index.html")
+						img(src="assets/i/logo-mobile.svg", alt="logo" width="98" height="44")
 					.close-menu#js-close-menu
 						span
 						span
@@ -24,11 +25,11 @@ block content
 
 				ul.nav-menu#js-nav-menu
 					li.nav-menu__item.nav-menu__item--catalog
-						a.nav-menu__link(href="catalog.html") Каталог товаров
+						a.nav-menu__link(href="#") Каталог товаров
 					li.nav-menu__item.nav-menu__item--order
 						a.nav-menu__link(href="#") Вязание на заказ
 					li.nav-menu__item.logo.nav-menu__logo
-						a.nav-menu__link(href="#")
+						a.nav-menu__link(href="index.html")
 							picture
 								source(media="(min-width: 1150px)", srcset="assets/i/logo.svg")
 								img(src="assets/i/logo-768.svg", alt="logo")
@@ -52,13 +53,11 @@ block content
 							a.nav-menu-bottom__link(href="#") Распродажа
 						li.nav-menu-bottom__item
 							a.nav-menu-bottom__link(href="#") Бесплатная доставка по России
-		include ../includes/stuff
-		include ../includes/week-product
-		include ../includes/line
-		include ../includes/quick
-		include ../includes/reviews
-		include ../includes/line
-		include ../includes/contacts
+		section.page-title
+			h2.section-title Каталог товаров
+
+		include ../includes/cards
+
 		include ../includes/footer
 
 

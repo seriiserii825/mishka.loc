@@ -1,16 +1,17 @@
 .section-title {
-	font-size: 53px;
+	font-size: 3.12rem;
 	line-height: 57px;
 	font-weight: bold;
 	color: $black;
 
+
 	@media screen and (max-width: $xl) {
-		font-size: 43px;
+		font-size: 2.53rem;
 		line-height: 50px;
 	}
 
 	@media screen and (max-width: $md) {
-		font-size: 25px;
+		font-size: 1.47rem;
 		line-height: 30px;
 	}
 }

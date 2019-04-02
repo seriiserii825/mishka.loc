@@ -1,0 +1,43 @@
+.cards
+	.container-big
+		.container
+			.cards__wrap
+				.cards__item
+					picture.cards__img
+						source(media="(min-width: 1150px)", srcset="assets/i/cards-1.jpg")
+						source(media="(min-width: 768px)", srcset="assets/i/cards-tablet-1.jpg")
+						img(src="assets/i/cards-mobile-1.jpg" alt="card")
+					.cards__content
+						h4.cards__title Зайчик-попрыгайчик
+						p.cards__param Рост 30 см, вес 200 г
+						.cards__price
+							.cards__number 1 200 руб.
+							svg.cards__icon
+								use(xlink:href="#card")
+
+				.cards__item
+					picture.cards__img
+						source(media="(min-width: 1150px)", srcset="assets/i/cards-2.jpg")
+						source(media="(min-width: 768px)", srcset="assets/i/cards-tablet-2.jpg")
+						img(src="assets/i/cards-mobile-2.jpg" alt="card")
+					.cards__content
+						h4.cards__title Корзина для белья
+						p.cards__param Рост 15 см, вес 10 г
+						.cards__price
+							.cards__number 1 200 руб.
+							svg.cards__icon
+								use(xlink:href="#card")
+
+				.cards__item
+					picture.cards__img
+						source(media="(min-width: 1150px)", srcset="assets/i/cards-3.jpg")
+						source(media="(min-width: 768px)", srcset="assets/i/cards-tablet-3.jpg")
+						img(src="assets/i/cards-mobile-3.jpg" alt="card")
+					.cards__content
+						h4.cards__title Большая корзина для игрушек
+						p.cards__param Рост 30 см, вес 30 г
+						.cards__price
+							.cards__number 1 200 руб.
+							svg.cards__icon
+								use(xlink:href="#card")
+
