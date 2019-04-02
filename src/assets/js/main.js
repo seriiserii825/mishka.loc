@@ -40,6 +40,14 @@ $(function () {
 
 	});
 
+	let videoImage = $('#js-video__img');
+	let videoPlay = $('#js-video__play');
+
+	videoPlay.on('click', function(){
+		videoPlay.fadeOut();
+		videoImage.fadeOut();
+	});
+
 });
 
 

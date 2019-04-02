@@ -1,0 +1,18 @@
+.video
+	.container-big
+		.container
+			.video__wrap
+				.video__frame
+					picture.video__img#js-video__img
+						source(media="(min-width: 768px)", srcset="assets/i/video.jpg")
+						img(src="assets/i/video-mobile.jpg", alt="video")
+					img.video__play#js-video__play(src="assets/i/video-play.png", alt="button")
+					.thumb-wrap
+						<iframe src="https://www.youtube.com/embed/bCznoaVNCk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				.video__content
+					header.video__header
+						svg.video__icon(width="32" height="22")
+							use(xlink:href="#video")
+						h4.video__title Процесс производства
+					p.video__text По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+					button.button.video__button сделать заказ

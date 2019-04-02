@@ -1,0 +1,121 @@
+.video {
+	margin-bottom: 106px;
+
+	@media screen and (max-width: $xl) {
+		margin-bottom: 64px;
+	}
+
+	@media screen and (max-width: $md) {
+		margin-bottom: 58px;
+	}
+}
+
+.video__wrap {
+	display: flex;
+	justify-content: space-between;
+
+	@media screen and (max-width: $xl) {
+		display: block;
+	}
+}
+
+.video__frame {
+	position: relative;
+	flex-basis: 668px;
+	height: 454px;
+	z-index: 1;
+
+	@media screen and (max-width: $md) {
+		width: 260px;
+		height: 150px;
+	}
+}
+
+.video__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	// display: none;
+	width: 668px;
+	height: 454px;
+	z-index: 3;
+
+	img {
+		height: 454px;
+
+		@media screen and (max-width: $xl) {
+			height: 150px;
+		}
+	}
+
+	@media screen and (max-width: $md) {
+		width: 260px;
+		height: 150px;
+	}
+}
+
+.video__play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 4;
+}
+
+.thumb-wrap {
+	height: 100%;
+	z-index: 2;
+
+	@media screen and (max-width: $md) {
+		padding-bottom: 0;
+	}
+}
+
+.video__content {
+	padding: 0 80px;
+	padding-top: 46px;
+	width: 368px;
+	border: 1px solid $gallery;
+
+	@media screen and (max-width: $xl) {
+		padding: 46px 40px;
+		width: 100%;
+	}
+}
+
+.video__header {
+	@media screen and (max-width: $xl) {
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+
+.video__icon {
+	fill: $accent;
+	margin-bottom: 20px;
+
+	@media screen and (max-width: $xl) {
+		margin-right: 34px;
+	}
+}
+
+.video__title {
+	margin-bottom: 30px;
+	font-size: 20px;
+	line-height: 24px;
+	color: $black;
+}
+
+.video__text {
+	margin-bottom: 40px;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.video__button {
+	width: 230px;
+
+	@media screen and (max-width: $xl) {
+		width: 100%;
+	}
+}
