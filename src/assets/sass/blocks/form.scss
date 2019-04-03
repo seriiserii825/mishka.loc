@@ -1,10 +1,19 @@
 .form__header {
 	padding: 130px 0 0;
+
+	@media screen and (max-width: $md) {
+		padding-top: 20px;
+	}
 }
 
 .form__text {
 	padding-left: 116px;
 	max-width: 796px;
+
+	@media screen and (max-width: $xl) {
+		padding-left: 0;
+	}
+
 }
 
 .form__group {
@@ -12,12 +21,32 @@
 	padding: 50px 0;
 	padding-left: 216px;
 
+	@media screen and (max-width: $md) {
+		padding-left: 0;
+	}
+
 	&--dark {
 		background: $seashell;
+
+		@media screen and (max-width: $md) {
+			background: $white;
+		}
 	}
 
 	&--checkbox {
 		padding-bottom: 26px;
+	}
+
+	&--text {
+		padding-left: 116px;
+
+		@media screen and (max-width: $xl) {
+			padding-left: 166px;
+		}
+
+		@media screen and (max-width: $md) {
+			padding-left: 0;
+		}
 	}
 }
 
@@ -28,6 +57,38 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	color: $accent;
+
+	@media screen and (max-width: $md) {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-bottom: 28px;
+		overflow: hidden;
+	}
+
+	&--text {
+		left: 14px;
+
+		@media screen and (max-width: $xl) {
+			left: 68px;
+		}
+
+		@media screen and (max-width: $md) {
+			left: 0;
+		}
+	}
+
+	&::before {
+		@media screen and (max-width: $md) {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 60px;
+			width: 100%;
+			height: 1px;
+			background: $accent;
+		}
+	}
 }
 
 .form__type-label {
@@ -82,6 +143,14 @@ input[type="radio"]:checked + label::after {
 .form__type-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+
+	@media screen and (max-width: $xl) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (max-width: $md) {
+		display: block;
+	}
 }
 
 .checkbox__label {
@@ -125,4 +194,77 @@ input[type="checkbox"]:checked + label::after {
 	width: 33px;
 	height: 22px;
 	background: url("../i/checked.svg") no-repeat center;
+}
+
+.form__text-group {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	top: 17px;
+	margin-bottom: 40px;
+
+	@media screen and (max-width: $md) {
+		display: block;
+	}
+}
+
+.form__text-label {
+	position: relative;
+	top: 7px;
+	margin-right: 25px;
+	font-size: 19px;
+	font-weight: bold;
+	color: $black;
+
+	@media screen and (max-width: $md) {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+.form__text-input {
+	width: 100%;
+	height: 50px;
+	font-size: 19px;
+	color: $tundora;
+	line-height: 50px;
+	text-indent: 18px;
+	border: none;
+	border-bottom: 2px solid $black;
+}
+
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="phone"]::-webkit-input-placeholder {
+	font-size: 19px;
+	color: $tundora;
+	opacity: 0.3;
+}
+/* webkit */
+
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="phone"]::-moz-placeholder {
+	font-size: 19px;
+	color: $tundora;
+	opacity: 0.3;
+}
+/* webkit */
+
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="phone"]:-moz-placeholder {
+	font-size: 19px;
+	color: $tundora;
+	opacity: 0.3;
+}
+/* webkit */
+
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="phone"]:-ms-input-placeholder {
+	font-size: 19px;
+	color: $tundora;
+	opacity: 0.3;
 }

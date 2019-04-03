@@ -40,3 +40,19 @@ form.form
 			.form__checkbox.checkbox
 				input.checkbox__input(id="orange" type="checkbox", name="orange" value="orange")
 				label.checkbox__label(for="orange") Оранжевый
+
+	.container
+		.form__group.form__group--text
+			.form__title.form__title--text Фио
+			.form__type-wrap
+				.form__text-group
+					label.form__text-label(for="names") Имя:
+					input.form__text-input(id="names" type="text", name="names" placeholder="Введите ваше имя*")
+
+				.form__text-group
+					label.form__text-label(for="surname") Фамилия:
+					input.form__text-input(id="surname" type="text", name="surname" placeholder="Укажите фамилию*")
+
+				.form__text-group
+					label.form__text-label(for="lastname") Отчество:
+					input.form__text-input(id="lastname" type="text", name="lastname" placeholder="Отчество, если желаете")
