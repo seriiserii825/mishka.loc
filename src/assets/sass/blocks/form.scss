@@ -15,6 +15,10 @@
 	&--dark {
 		background: $seashell;
 	}
+
+	&--checkbox {
+		padding-bottom: 26px;
+	}
 }
 
 .form__title {
@@ -38,6 +42,14 @@
 	color: $black;
 	cursor: pointer;
 
+	&:hover::before {
+		border-color: $accent;
+	}
+
+	&:active::before {
+		border-color: $gallery;
+	}
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -47,10 +59,12 @@
 		height: 52px;
 		border: 2px solid $tundora;
 		border-radius: 50%;
+		transition: all .4s ease;
 	}
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
 	display: none;
 }
 
@@ -63,4 +77,52 @@ input[type="radio"]:checked + label::after {
 	height: 22px;
 	background: $accent;
 	border-radius: 50%;
+}
+
+.form__type-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.checkbox__label {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
+	padding-left: 80px;
+	height: 52px;
+	font-size: 19px;
+	font-weight: bold;
+	color: $black;
+	cursor: pointer;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50px;
+		height: 48px;
+		border: 2px solid $tundora;
+		transition: all .4s ease;
+	}
+
+	&:hover::before {
+		border-color: $accent;
+	}
+
+	&:active::before {
+		border-color: $silver;
+	}
+
+}
+
+input[type="checkbox"]:checked + label::after {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 33px;
+	height: 22px;
+	background: url("../i/checked.svg") no-repeat center;
 }

@@ -14,8 +14,29 @@ form.form
 				input(id="radio2" type="radio", name="element" value="toy")
 				label.form__type-label(for="radio2") Детская игрушка
 
-	.form__group.form__group--dark
+	.form__group.form__group--dark.form__group--checkbox
 		.form__title Цвет
-		.form__type-wrap
-			.form__color
+		.form__type-grid
+			.form__checkbox.checkbox
+				input.checkbox__input(id="white" type="checkbox", name="white" value="white" checked)
+				label.checkbox__label(for="white") Белый
 
+			.form__checkbox.checkbox
+				input.checkbox__input(id="gray" type="checkbox", name="gray" value="gray" checked)
+				label.checkbox__label(for="gray") Серый
+
+			.form__checkbox.checkbox
+				input.checkbox__input(id="tiffany" type="checkbox", name="tiffany" value="tiffany")
+				label.checkbox__label(for="tiffany") &laquo;Тиффани&raquo;
+
+			.form__checkbox.checkbox
+				input.checkbox__input(id="black" type="checkbox", name="black" value="black")
+				label.checkbox__label(for="black") Черный
+
+			.form__checkbox.checkbox
+				input.checkbox__input(id="pink" type="checkbox", name="pink" value="pink")
+				label.checkbox__label(for="pink") Розовый
+
+			.form__checkbox.checkbox
+				input.checkbox__input(id="orange" type="checkbox", name="orange" value="orange")
+				label.checkbox__label(for="orange") Оранжевый
